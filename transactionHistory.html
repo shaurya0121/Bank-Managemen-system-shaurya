@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="create-account.html">Create Account</a></li>
+          <li><a href="deposit.html">Deposit</a></li>
+          <li><a href="withdraw.html">Withdraw</a></li>
+          <li><a href="transfer.html">Transfer</a></li>
+          <li><a href="accounts.html">Accounts</a></li>
+        </ul>
+      </nav>
+      <div class="heroBanner"><h1>Bank Managment System</h1></div>
+    </header>
+
+    <main class="transaction-history-Main">
+      <div id="account-details">
+     
+      </div>
+
+      <h1>Transaction History</h1>
+      <div id="history-list">
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+            
+        </table>
+    </div>
+    
+    </main>
+
+    <footer></footer>
+   <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadTransactionHistory);
+    </script>
+  </body>
+  
+</html>

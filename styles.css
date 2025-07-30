@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14, 103, 126);
+    color: aliceblue;
+    text-align: center;
+}
+.container{
+    /* height: 65vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+nav{
+   /* display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center; */
+   background-color: rgb(4, 51, 63);
+   height: 5rem;
+   position:fixed;
+   width: 100%;
+   top:-1rem
+
+
+}
+
+nav ul{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+nav li{
+   margin: 1rem;
+   padding: 0;
+   border:2px solid rgba(255,255,1255, .3);
+   background-color: rgb(14, 103, 126);
+   border-radius: .5rem;
+   min-width: 10rem;
+   height: 2rem;
+   align-content: center;
+}
+
+nav li:hover{
+   background-color: rgb(247, 252, 253);
+   border:2px solid rgba(255,255,1255, .3);
+   transform: scale(1.1);
+   color: rgb(4, 51, 63);
+}
+
+.heroBanner {
+  background-color: aqua;
+  width: 100%;
+  height: 15rem;
+  margin-top: 4rem;
+  background-image: url('bankImage.jpg');
+  background-size: 100% 15rem; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.heroBanner h1{
+  color: black;
+  font-size: 4rem;
+}
+
+/* design for home page */
+.homeMain{
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  margin-left:15vw ;
+  margin-top: 2vh;
+}
+
+.homeMain div {
+  width: 30vmin;
+  height: 25vmin;
+  /* background-color: bisque; */
+  background-color: salmon;
+  opacity: 0.9;
+  padding: 0;
+  transition: background-color 0.3s; 
+  color: rgb(255, 255, 255);
+  border: .5rem solid rgba(4, 51, 63, .3);
+  box-shadow: 0 0 10px rgba(0,0,0, .7);
+  font-size: 2rem;
+}
+
+.homeMain div:hover {
+  transform: scale(1.05); 
+  background-color: rgb(207, 218, 218);
+  color: rgb(5, 5, 5);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* design for create account */
+
+.create-account-Main{
+  width: 70vw;
+  height: 45vh;
+  margin-left: 15vw;
+  background-color: rgba(0,0,0, .25);
+}
+
+.create-account-Main h1{
+  margin-top: 5vh;
+}
+
+.create-account-Main div{
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  gap: 2rem
+}
+
+
+.create-account-Main label , input ,button{
+  
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#create-account{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.create-account-Main input{
+  width: 20vw;
+}
+
+.create-account-Main label {
+ width: 20vw;
+ background-color: salmon;
+ display: block; 
+
+}
+
+.create-account-Main button{
+  margin-top: 5vh;
+  background-color: rgb(4, 51, 63);
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s;
+  
+}
+.create-account-Main button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transform: scale(1.05); 
+}
+
+/* design for accounts */
+
+.accounts-Main{
+  width: 70vw;
+  height: auto;
+  margin-left: 15vw;
+}
+
+#accounts-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem
+}
+.account{
+  width: 45vmin;
+  height: 20vmin;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0,0,0, .25);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.account button{
+  background-color: rgb(86, 114, 238);
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: .8rem;
+}
+
+.account button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+
+/* transactionHisrory design part */
+
+.transaction-history-Main h1{
+  font-size: 2rem;
+}
+
+.transaction-history-Main p{
+  
+  height: 3vh;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+#history-table{
+  /* background-color: rgba(0,0,0, .4); */
+  width: 100%;
+}
+#history-table th{
+  background-color:rgba(0,0,0, .5);
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#history-table td{
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid rgb(0, 0, 0)
+}
+
+#history-table tr:nth-child(even){
+  background-color:rgba(0,0,0, .3);
+ 
+}
+
+/* #history-table tr:nth-child(odd){
+
+
+} */
